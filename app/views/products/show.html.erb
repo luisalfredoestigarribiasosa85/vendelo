@@ -1,0 +1,9 @@
+<h1>Detalles del Producto</h1>
+<div class="card d-flex align-items-center justify-content-center mx-auto" style="width: 50%;">
+    <div class="card-body">
+        <h5 class="card-title"><%= @product.title %></h5>
+        <h6 class="card-subtitle mb-2 text-muted">Precio: <%= @product.price %></h6>
+        <p class="card-text">Descripción: <%= @product.description %></p>
+        <a href="<%= products_path %>" class="btn btn-primary">Volver a la lista de productos</a>
+    </div>
+</div>

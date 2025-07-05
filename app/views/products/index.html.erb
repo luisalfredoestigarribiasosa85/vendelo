@@ -1,0 +1,15 @@
+<h1>Productos: </h1>
+<% if @products.empty? %>
+    <p>No hay productos disponibles.</p>
+<% end %>
+<div class="d-flex flex-wrap align-items-center justify-content-around">
+    <% @products.each do |product| %>
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title"><%= product.title %></h5>
+                <h6 class="card-subtitle mb-2 text-muted">Precio: <%= product.price %></h6>
+                <%= link_to "Ver detalles", product_path(product), class: "card-link" %>
+            </div>
+        </div>
+    <% end %>
+</div>
