@@ -1,9 +1,24 @@
-<h1>Detalles del Producto</h1>
+<h1><%= @product.title %></h1>
 <div class="card d-flex align-items-center justify-content-center mx-auto" style="width: 50%;">
     <div class="card-body">
+    <% if @product.image.attached? %>
+        <%= image_tag @product.image, class: 'img-fluid mb-3' %>
+    <% else %>
+        <p> <%= t('.no_image') %> </p>
+    <% end %>
         <h5 class="card-title"><%= @product.title %></h5>
-        <h6 class="card-subtitle mb-2 text-muted">Precio: <%= @product.price %></h6>
-        <p class="card-text">Descripción: <%= @product.description %></p>
-        <a href="<%= products_path %>" class="btn btn-primary">Volver a la lista de productos</a>
+        <h6><%= t('.price') %>: <%= @product.price %>$</h6>
+        <p class="card-text"><%= t('.description') %>: <%= @product.description %></p>
+        <div class="d-flex justify-content-between">
+            <%= link_to t('.edit'), edit_product_path(@product), class: 'btn btn-primary' %>
+            <%= button_to t('.delete'), product_path(@product), method: :delete, data: { turbo_confirm: t('common.confirm') }, class: 'btn btn-danger' %>
+        </div>
+        </div>
+        <div class="card-footer text-muted">
+            <p> <%= t('.created_at') %> <%= @product.created_at.strftime("%d/%m/%Y %H:%M") %></p>
+        <p> <%= t('.updated_at') %> <%= @product.updated_at.strftime("%d/%m/%Y %H:%M") %></p>
+    </div>
+    <div class="text-center mt-3">
+        <%= link_to t('.back_to_index'), products_path, class: 'btn btn-secondary' %>
     </div>
 </div>

@@ -1,11 +1,36 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  title: MyString
-  description: MyText
-  price: 1
+PS4:
+  title: PS4
+  description: PS4 en excelente estado
+  price: 100
 
-two:
-  title: MyString
-  description: MyText
-  price: 1
+switch:
+  title: Nintendo Switch
+  description: Nintendo Switch en excelente estado
+  price: 300
+
+PS5:
+  title: PS5
+  description: PS5 en excelente estado
+  price: 500
+
+iPhone:
+  title: iPhone 12
+  description: iPhone 12 en excelente estado
+  price: 800
+
+iPad:
+  title: iPad Pro
+  description: iPad Pro en excelente estado
+  price: 1000
+
+laptop:
+  title: Laptop Dell XPS
+  description: Laptop Dell XPS en excelente estado
+  price: 1200
+
+smartwatch:
+  title: Smartwatch Samsung Galaxy
+  description: Smartwatch Samsung Galaxy en excelente estado
+  price: 200

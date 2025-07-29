@@ -28,4 +28,111 @@
 #       enabled: "ON"
 
 en:
-  hello: "Hello world"
+  activerecord:
+    models:
+      product: "Product"
+    attributes:
+      product:
+        title: "Title"
+        description: "Description"
+        price: "Price"
+        image: "Image"
+    errors:
+      models:
+        product:
+          attributes:
+            title:
+              blank: "can't be blank"
+            description:
+              blank: "can't be blank"
+            price:
+              blank: "can't be blank"
+              not_a_number: "must be a number"
+            image:
+              blank: "can't be blank"
+              invalid: "must be a valid image"
+
+  common:
+    confirm: "Are you sure you want to delete this product?"
+
+  home:
+    index:
+      title: "Welcome to Vendelo!"
+      description: "This is the home page of your Rails application."
+      go_to_products: "Go to Products"
+
+  products:
+    edit:
+      title: "Edit Product"
+      not_found: "Product not found."
+      form:
+        title: "Product Title"
+        description: "Product Description"
+        price: "Product Price"
+        image: "Product Image"
+        submit: "Save Product"
+        back_to_index: "Back to Products"
+        errors:
+          title:
+            blank: "can't be blank"
+          description:
+            blank: "can't be blank"
+          price:
+            blank: "can't be blank"
+            not_a_number: "must be a number"
+          image:
+            blank: "can't be blank"
+            invalid: "must be a valid image"
+          many_errors: "prevented the product from being saved"
+        cancel: "Cancel"
+
+    new:
+      title: "Add Product"
+
+    index:
+      title: "Products:"
+    
+    show:
+      not_found: "Product not found."
+      price: "Price"
+      no_image: "No image available for this product."
+      edit: "Edit Product"
+      delete: "Delete Product"
+      created_at: "Created at:"
+      updated_at: "Updated at:"
+      back_to_index: "Back to Products"
+    
+    create:
+      created_successfully: "Product created successfully."
+      creation_error: "Error creating product."
+
+    update:
+      updated_successfully: "Product updated successfully."
+      update_error: "Error updating product."
+
+    destroy:
+      deleted_successfully: "Product deleted successfully."
+      deletion_error: "Error deleting product."
+
+    set_product:
+      not_found: "Product not found."
+      
+  
+  shared:
+    header:
+      home: "Home"
+      products: "Products"
+      add_product: "Add Product"
+
+    product:
+      no_image: "No image available for this product."
+      title: "Product Title"
+      description: "Product Description"
+      price: "Price"
+      edit: "Edit Product"
+      delete: "Delete Product"
+      view_details: "View Details"
+      add_to_cart: "Add to Cart"
+      buy_now: "Buy Now"
+      out_of_stock: "Out of Stock"
+      in_stock: "In Stock"

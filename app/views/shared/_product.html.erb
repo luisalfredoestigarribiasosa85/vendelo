@@ -1,0 +1,12 @@
+<div class="card" style="width: 18rem;">
+    <div class="card-body">
+        <% if product.image.attached? %>
+            <%= image_tag product.image, class: 'card-img-top img-fluid' %>
+        <% else %>
+            <p><%= t('.no_image') %> </p>
+        <% end %>
+        <h5 class="card-title"><%= product.title %></h5>
+        <h6 class="card-subtitle mb-2 text-muted"><%= t('.price') %>: <%= product.price %>$</h6>
+        <%= link_to t('.view_details'), product_path(product), class: "card-link" %>
+    </div>
+</div>

@@ -23,5 +23,10 @@ module Vendelo
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
+
+    # Available languages
+    config.i18n.available_locales = %i[en es]
+    # Default language
+    config.i18n.default_locale = :es
   end
 end

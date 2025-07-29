@@ -6,8 +6,9 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
-        <%= link_to 'Home', home_path, class: 'nav-link text-light' %>
-        <%= link_to 'Products', products_path, class: 'nav-link text-light' %>
+        <%= link_to t('.home'), home_path, class: 'nav-link text-light' %>
+        <%= link_to t('.products'), products_path, class: 'nav-link text-light' %>
+        <%= link_to t('.add_product'), new_product_path, class: 'nav-link text-light' %>
       </ul>
     </div>
   </div>

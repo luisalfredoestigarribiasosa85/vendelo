@@ -1,0 +1,100 @@
+es:
+  activerecord:
+    models:
+      product: "Producto"
+    attributes:
+      product:
+        title: "Título"
+        description: "Descripción"
+        price: "Precio"
+        image: "Imagen"
+    errors:
+      models:
+        product:
+          attributes:
+            title:
+              blank: "no puede estar en blanco"
+            description:
+              blank: "no puede estar en blanco"
+            price:
+              blank: "no puede estar en blanco"
+              not_a_number: "debe ser un número"
+            image:
+              blank: "no puede estar en blanco"
+              invalid: "debe ser una imagen válida"
+  common:
+    confirm: "¿Estás seguro de que quieres eliminar este producto?"
+
+  home:
+    index:
+      title: "Bienvenido a Vendelo"
+      description: "Aquí puedes comprar y vender productos de segunda mano."
+      go_to_products: "Ir a Productos"
+  products:
+    edit:
+      title: "Editar Producto"
+      not_found: "Producto no encontrado."
+
+    new:
+      title: "Añadir Producto"
+
+    index:
+      title: "Productos:"
+    
+    show:
+      not_found: "Producto no encontrado."
+      price: "Precio"
+      no_image: "No hay imagen disponible para este producto."
+      edit: "Editar Producto"
+      delete: "Eliminar Producto"
+      created_at: "Creado el:"
+      updated_at: "Actualizado el:"
+      back_to_index: "Volver a Productos"
+    
+    create:
+      created_successfully: "Producto creado exitosamente."
+      creation_error: "Error al crear el producto."
+
+    update:
+      updated_successfully: "Producto actualizado exitosamente."
+      update_error: "Error al actualizar el producto."
+
+    destroy:
+      deleted_successfully: "Producto eliminado exitosamente."
+      deletion_error: "Error al eliminar el producto."
+
+    set_product:
+      not_found: "Producto no encontrado."
+
+    form:
+      title: "Título del Producto"
+      description: "Descripción del Producto"
+      price: "Precio del Producto"
+      image: "Imagen del Producto"
+      submit: "Guardar Producto"
+      errors:
+        title: "Errores al guardar el producto"
+        blank: "no puede estar en blanco"
+        not_a_number: "debe ser un número"
+        invalid_image: "debe ser una imagen válida"
+        many_errors: "impidieron guardar el producto"
+      cancel: "Cancelar"
+      back_to_index: "Volver a Productos"
+
+  shared:
+    header:
+      home: "Inicio"
+      products: "Productos"
+      add_product: "Añadir Producto"
+    product:
+      no_image: "No hay imagen disponible para este producto."
+      title: "Título del Producto"
+      description: "Descripción del Producto"
+      price: "Precio del Producto"
+      edit: "Editar Producto"
+      delete: "Eliminar Producto"
+      view_details: "Ver Detalles"
+      add_to_cart: "Añadir al Carrito"
+      buy_now: "Comprar Ahora"
+      out_of_stock: "Agotado"
+      in_stock: "En Stock"

@@ -1,0 +1,89 @@
+2025-07-20 14:48:30.672 -03 [9054] LOG:  starting PostgreSQL 17.2 on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0, 64-bit
+2025-07-20 14:48:30.672 -03 [9054] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2025-07-20 14:48:30.681 -03 [9054] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2025-07-20 14:48:30.750 -03 [9057] LOG:  database system was shut down at 2025-07-15 22:19:58 -03
+2025-07-20 14:48:30.817 -03 [9054] LOG:  database system is ready to accept connections
+2025-07-20 14:48:56.134 -03 [9331] FATAL:  database "vendelo_development" does not exist
+2025-07-20 14:48:58.927 -03 [9343] FATAL:  database "vendelo_development" does not exist
+2025-07-20 14:49:41.488 -03 [9419] FATAL:  database "vendelo_development" does not exist
+2025-07-20 14:53:30.860 -03 [9055] LOG:  checkpoint starting: time
+2025-07-20 14:55:10.238 -03 [9055] LOG:  checkpoint complete: wrote 955 buffers (5.8%); 0 WAL file(s) added, 0 removed, 1 recycled; write=99.325 s, sync=0.008 s, total=99.378 s; sync files=317, longest=0.004 s, average=0.001 s; distance=4385 kB, estimate=4385 kB; lsn=0/42A77E8, redo lsn=0/42A7758
+2025-07-20 14:58:05.967 -03 [9054] LOG:  received smart shutdown request
+2025-07-20 14:58:05.973 -03 [9054] LOG:  background worker "logical replication launcher" (PID 9060) exited with exit code 1
+2025-07-20 14:58:05.980 -03 [9055] LOG:  shutting down
+2025-07-20 14:58:05.983 -03 [9055] LOG:  checkpoint starting: shutdown immediate
+2025-07-20 14:58:05.998 -03 [9055] LOG:  checkpoint complete: wrote 0 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.018 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=3946 kB; lsn=0/42A7898, redo lsn=0/42A7898
+2025-07-20 14:58:06.012 -03 [9054] LOG:  database system is shut down
+2025-07-20 17:12:56.190 -03 [7062] LOG:  starting PostgreSQL 17.2 on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0, 64-bit
+2025-07-20 17:12:56.192 -03 [7062] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2025-07-20 17:12:56.197 -03 [7062] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2025-07-20 17:12:56.247 -03 [7065] LOG:  database system was shut down at 2025-07-20 14:58:05 -03
+2025-07-20 17:12:56.288 -03 [7062] LOG:  database system is ready to accept connections
+2025-07-20 17:17:56.349 -03 [7063] LOG:  checkpoint starting: time
+2025-07-20 17:17:56.516 -03 [7063] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.110 s, sync=0.007 s, total=0.167 s; sync files=3, longest=0.004 s, average=0.003 s; distance=0 kB, estimate=0 kB; lsn=0/42A7C20, redo lsn=0/42A7BC8
+2025-07-20 17:30:48.204 -03 [8962] FATAL:  lock file "postmaster.pid" already exists
+2025-07-20 17:30:48.204 -03 [8962] HINT:  Is another postmaster (PID 7062) running in data directory "/home/luis-estigarribia/.asdf/installs/postgres/17.2/data"?
+2025-07-20 17:42:56.956 -03 [7063] LOG:  checkpoint starting: time
+2025-07-20 17:42:57.278 -03 [7063] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.307 s, sync=0.003 s, total=0.323 s; sync files=4, longest=0.002 s, average=0.001 s; distance=1 kB, estimate=1 kB; lsn=0/42A81F8, redo lsn=0/42A81A0
+2025-07-20 17:45:17.807 -03 [10898] FATAL:  database "vendelo_test" does not exist
+2025-07-20 17:52:41.846 -03 [11471] FATAL:  database "vendelo_test" does not exist
+2025-07-20 18:07:56.738 -03 [7063] LOG:  checkpoint starting: time
+2025-07-20 18:09:34.566 -03 [7063] LOG:  checkpoint complete: wrote 954 buffers (5.8%); 0 WAL file(s) added, 0 removed, 0 recycled; write=97.812 s, sync=0.005 s, total=97.828 s; sync files=316, longest=0.001 s, average=0.001 s; distance=4388 kB, estimate=4388 kB; lsn=0/46F1498, redo lsn=0/46F1408
+2025-07-20 18:27:56.968 -03 [7063] LOG:  checkpoint starting: time
+2025-07-20 18:28:02.866 -03 [7063] LOG:  checkpoint complete: wrote 59 buffers (0.4%); 0 WAL file(s) added, 0 removed, 0 recycled; write=5.887 s, sync=0.002 s, total=5.899 s; sync files=60, longest=0.002 s, average=0.001 s; distance=227 kB, estimate=3972 kB; lsn=0/472A3F0, redo lsn=0/472A360
+2025-07-20 18:37:57.014 -03 [7063] LOG:  checkpoint starting: time
+2025-07-20 18:37:58.741 -03 [7063] LOG:  checkpoint complete: wrote 18 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=1.720 s, sync=0.003 s, total=1.728 s; sync files=13, longest=0.002 s, average=0.001 s; distance=2 kB, estimate=3575 kB; lsn=0/472AEE0, redo lsn=0/472AE88
+2025-07-20 18:42:57.842 -03 [7063] LOG:  checkpoint starting: time
+2025-07-20 18:42:58.875 -03 [7063] LOG:  checkpoint complete: wrote 11 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=1.020 s, sync=0.002 s, total=1.033 s; sync files=11, longest=0.002 s, average=0.001 s; distance=4 kB, estimate=3218 kB; lsn=0/472C0E0, redo lsn=0/472C088
+2025-07-20 18:47:57.973 -03 [7063] LOG:  checkpoint starting: time
+2025-07-20 18:47:59.202 -03 [7063] LOG:  checkpoint complete: wrote 13 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=1.215 s, sync=0.003 s, total=1.230 s; sync files=13, longest=0.002 s, average=0.001 s; distance=5 kB, estimate=2897 kB; lsn=0/472D5E8, redo lsn=0/472D590
+2025-07-20 18:48:01.936 -03 [7063] LOG:  checkpoint starting: immediate force wait
+2025-07-20 18:48:01.944 -03 [7063] LOG:  checkpoint complete: wrote 2 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.002 s, total=0.009 s; sync files=2, longest=0.002 s, average=0.001 s; distance=8 kB, estimate=2608 kB; lsn=0/472F600, redo lsn=0/472F5A8
+2025-07-20 18:53:02.041 -03 [7063] LOG:  checkpoint starting: time
+2025-07-20 18:54:41.049 -03 [7063] LOG:  checkpoint complete: wrote 964 buffers (5.9%); 0 WAL file(s) added, 0 removed, 0 recycled; write=98.992 s, sync=0.007 s, total=99.009 s; sync files=335, longest=0.004 s, average=0.001 s; distance=4470 kB, estimate=4470 kB; lsn=0/4B8CFE0, redo lsn=0/4B8CF50
+2025-07-20 19:03:02.244 -03 [7063] LOG:  checkpoint starting: time
+2025-07-20 19:03:04.161 -03 [7063] LOG:  checkpoint complete: wrote 19 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=1.907 s, sync=0.002 s, total=1.917 s; sync files=18, longest=0.001 s, average=0.001 s; distance=22 kB, estimate=4025 kB; lsn=0/4B928C8, redo lsn=0/4B92870
+2025-07-20 19:08:03.547 -03 [18212] FATAL:  role "root" does not exist
+2025-07-20 19:08:20.811 -03 [18228] FATAL:  role "root" does not exist
+2025-07-20 19:08:50.322 -03 [18254] FATAL:  role "root" does not exist
+2025-07-20 19:13:37.610 -03 [7062] LOG:  received fast shutdown request
+2025-07-20 19:13:37.613 -03 [7062] LOG:  aborting any active transactions
+2025-07-20 19:13:37.616 -03 [7062] LOG:  background worker "logical replication launcher" (PID 7068) exited with exit code 1
+2025-07-20 19:13:37.619 -03 [7063] LOG:  shutting down
+2025-07-20 19:13:37.621 -03 [7063] LOG:  checkpoint starting: shutdown immediate
+2025-07-20 19:13:37.628 -03 [7063] LOG:  checkpoint complete: wrote 0 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.009 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=3623 kB; lsn=0/4B92978, redo lsn=0/4B92978
+2025-07-20 19:13:37.653 -03 [7062] LOG:  database system is shut down
+2025-07-20 19:13:42.478 -03 [18711] LOG:  starting PostgreSQL 17.2 on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0, 64-bit
+2025-07-20 19:13:42.478 -03 [18711] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2025-07-20 19:13:42.481 -03 [18711] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2025-07-20 19:13:42.489 -03 [18714] LOG:  database system was shut down at 2025-07-20 19:13:37 -03
+2025-07-20 19:13:42.505 -03 [18711] LOG:  database system is ready to accept connections
+2025-07-20 19:18:42.591 -03 [18712] LOG:  checkpoint starting: time
+2025-07-20 19:18:43.218 -03 [18712] LOG:  checkpoint complete: wrote 9 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.614 s, sync=0.003 s, total=0.627 s; sync files=6, longest=0.002 s, average=0.001 s; distance=8 kB, estimate=8 kB; lsn=0/4B94D18, redo lsn=0/4B94CC0
+2025-07-20 19:28:14.875 -03 [18711] LOG:  received smart shutdown request
+2025-07-20 19:28:14.902 -03 [18711] LOG:  background worker "logical replication launcher" (PID 18717) exited with exit code 1
+2025-07-20 19:28:14.904 -03 [18712] LOG:  shutting down
+2025-07-20 19:28:14.908 -03 [18712] LOG:  checkpoint starting: shutdown immediate
+2025-07-20 19:28:14.931 -03 [18712] LOG:  checkpoint complete: wrote 11 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.009 s, sync=0.005 s, total=0.028 s; sync files=9, longest=0.004 s, average=0.001 s; distance=50 kB, estimate=50 kB; lsn=0/4BA15B8, redo lsn=0/4BA15B8
+2025-07-20 19:28:14.944 -03 [18711] LOG:  database system is shut down
+2025-07-24 20:22:54.872 -03 [6829] LOG:  starting PostgreSQL 17.2 on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0, 64-bit
+2025-07-24 20:22:54.873 -03 [6829] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2025-07-24 20:22:54.876 -03 [6829] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2025-07-24 20:22:54.907 -03 [6835] LOG:  database system was shut down at 2025-07-20 19:28:14 -03
+2025-07-24 20:22:54.924 -03 [6829] LOG:  database system is ready to accept connections
+2025-07-24 20:27:55.009 -03 [6833] LOG:  checkpoint starting: time
+2025-07-24 20:27:55.030 -03 [6833] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.004 s, sync=0.003 s, total=0.022 s; sync files=2, longest=0.002 s, average=0.002 s; distance=0 kB, estimate=0 kB; lsn=0/4BA16C0, redo lsn=0/4BA1668
+2025-07-24 20:37:55.121 -03 [6833] LOG:  checkpoint starting: time
+2025-07-24 20:37:56.347 -03 [6833] LOG:  checkpoint complete: wrote 13 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=1.217 s, sync=0.002 s, total=1.227 s; sync files=13, longest=0.002 s, average=0.001 s; distance=7 kB, estimate=7 kB; lsn=0/4BA3428, redo lsn=0/4BA33D0
+2025-07-24 21:02:55.745 -03 [6833] LOG:  checkpoint starting: time
+2025-07-24 21:02:56.769 -03 [6833] LOG:  checkpoint complete: wrote 12 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=1.017 s, sync=0.002 s, total=1.024 s; sync files=10, longest=0.001 s, average=0.001 s; distance=49 kB, estimate=49 kB; lsn=0/4BAF9E8, redo lsn=0/4BAF990
+2025-07-24 21:12:55.962 -03 [6833] LOG:  checkpoint starting: time
+2025-07-24 21:12:57.507 -03 [6833] LOG:  checkpoint complete: wrote 17 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=1.527 s, sync=0.005 s, total=1.545 s; sync files=12, longest=0.003 s, average=0.001 s; distance=67 kB, estimate=67 kB; lsn=0/4BC0790, redo lsn=0/4BC0738
+2025-07-24 21:52:56.219 -03 [6833] LOG:  checkpoint starting: time
+2025-07-24 21:52:56.535 -03 [6833] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.307 s, sync=0.002 s, total=0.316 s; sync files=4, longest=0.001 s, average=0.001 s; distance=3 kB, estimate=61 kB; lsn=0/4BC14B8, redo lsn=0/4BC1460
+2025-07-24 23:34:49.966 -03 [6829] LOG:  received smart shutdown request
+2025-07-24 23:34:50.000 -03 [6829] LOG:  background worker "logical replication launcher" (PID 6838) exited with exit code 1
+2025-07-24 23:34:50.001 -03 [6833] LOG:  shutting down
+2025-07-24 23:34:50.004 -03 [6833] LOG:  checkpoint starting: shutdown immediate
+2025-07-24 23:34:50.023 -03 [6833] LOG:  checkpoint complete: wrote 0 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.022 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=54 kB; lsn=0/4BC1568, redo lsn=0/4BC1568
+2025-07-24 23:34:50.035 -03 [6829] LOG:  database system is shut down
