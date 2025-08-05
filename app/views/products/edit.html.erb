@@ -1,3 +1,11 @@
 <!-- Formulario para editar un producto existente -->
-<h2><%= t('.title') %> </h2>
-<%= render 'form' %>
+<div class="container mt-5">
+    <div class="card shadow-sm">
+        <div class="card-header bg-primary text-white">
+            <h2 class="mb-0"><%= t('.title') %></h2>
+        </div>
+        <div class="card-body">
+            <%= render 'form' %>
+        </div>
+    </div>
+</div>

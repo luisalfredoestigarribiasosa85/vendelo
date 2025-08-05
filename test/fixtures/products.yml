@@ -4,33 +4,70 @@ PS4:
   title: PS4
   description: PS4 en excelente estado
   price: 100
+  category: Videogames
 
 switch:
   title: Nintendo Switch
   description: Nintendo Switch en excelente estado
   price: 300
+  category: Videogames
 
 PS5:
   title: PS5
   description: PS5 en excelente estado
   price: 500
+  category: Videogames
 
 iPhone:
   title: iPhone 12
   description: iPhone 12 en excelente estado
   price: 800
+  category: Technology
 
 iPad:
   title: iPad Pro
   description: iPad Pro en excelente estado
   price: 1000
+  category: Technology
 
 laptop:
   title: Laptop Dell XPS
   description: Laptop Dell XPS en excelente estado
   price: 1200
+  category: Technology
 
 smartwatch:
   title: Smartwatch Samsung Galaxy
   description: Smartwatch Samsung Galaxy en excelente estado
   price: 200
+  category: Technology
+
+Sneakers:
+  title: Sneakers Nike Air Max
+  description: Sneakers Nike Air Max en excelente estado
+  price: 150
+  category: Shoes
+
+Jacket:
+  title: Jacket North Face
+  description: Jacket North Face en excelente estado
+  price: 250
+  category: Fashion
+
+Dress:
+  title: Dress Zara
+  description: Dress Zara en excelente estado
+  price: 100
+  category: Fashion
+
+Book1:
+  title: The Great Gatsby
+  description: A classic novel by F. Scott Fitzgerald
+  price: 20
+  category: Books
+
+Book2:
+  title: 1984
+  description: A dystopian novel by George Orwell
+  price: 15
+  category: Books

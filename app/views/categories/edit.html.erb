@@ -1,0 +1,16 @@
+<% content_for :title, "Editing category" %>
+
+<div class="container mt-4">
+  <div class="card shadow-sm">
+    <div class="card-header bg-primary text-white">
+      <h2 class="mb-0"><%= t('categories.edit.title') %></h2>
+    </div>
+    <div class="card-body">
+      <%= render "form", category: @category %>
+      <div class="mt-4 d-flex justify-content-between">
+        <%= link_to t('categories.index.show_this_category'), @category, class: 'btn btn-success' %>
+        <%= link_to t('categories.edit.back_to_categories'), categories_path, class: 'btn btn-secondary' %>
+      </div>
+    </div>
+  </div>
+</div>

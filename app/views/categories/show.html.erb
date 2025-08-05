@@ -1,0 +1,11 @@
+
+
+<div class="container py-5">
+  <h1 class="text-center mb-4 display-5"><%= @category.name %></h1>
+
+  <div class="d-flex justify-content-center gap-3 mt-4">
+    <%= link_to t('categories.edit.title'), edit_category_path(@category), class: 'btn btn-warning btn-lg' %>
+    <%= link_to t('categories.edit.back_to_categories'), categories_path, class: 'btn btn-secondary btn-lg' %>
+    <%= button_to t('categories.destroy.destroy_category'), @category, method: :delete, data: { turbo_confirm: t('categories.destroy.confirm') }, class: 'btn btn-danger btn-lg' %>
+  </div>
+</div>

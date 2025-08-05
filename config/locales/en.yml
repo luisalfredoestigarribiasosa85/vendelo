@@ -65,26 +65,28 @@ en:
     edit:
       title: "Edit Product"
       not_found: "Product not found."
-      form:
-        title: "Product Title"
-        description: "Product Description"
-        price: "Product Price"
-        image: "Product Image"
-        submit: "Save Product"
-        back_to_index: "Back to Products"
-        errors:
-          title:
-            blank: "can't be blank"
-          description:
-            blank: "can't be blank"
-          price:
-            blank: "can't be blank"
-            not_a_number: "must be a number"
+    form:
+      title: "Product Title"
+      description: "Product Description"
+      price: "Product Price"
+      image: "Product Image"
+      category: "Product Category"
+      select_category: "Select a category"
+      submit: "Save Product"
+      back_to_index: "Back to Products"
+      errors:
+        title:
+          blank: "can't be blank"
+        description:
+          blank: "can't be blank"
+        price:
+          blank: "can't be blank"
+          not_a_number: "must be a number"
           image:
-            blank: "can't be blank"
-            invalid: "must be a valid image"
-          many_errors: "prevented the product from being saved"
-        cancel: "Cancel"
+          blank: "can't be blank"
+          invalid: "must be a valid image"
+        many_errors: "prevented the product from being saved"
+      cancel: "Cancel"
 
     new:
       title: "Add Product"
@@ -136,3 +138,64 @@ en:
       buy_now: "Buy Now"
       out_of_stock: "Out of Stock"
       in_stock: "In Stock"
+
+  categories:
+    index:
+      title: "Categories"
+      name: "Name"
+      no_categories: "No categories available."
+      add_category: "Add Category"
+      show_this_category: "Show this category"
+      new_category: "New Category"
+      notice_created: "Category created successfully."
+      notice_updated: "Category updated successfully."
+      notice_deleted: "Category deleted successfully."
+      error: "Error processing the request."
+    new:
+      title: "Add New Category"
+      form:
+        name: "Category Name"
+        description: "Category Description"
+        submit: "Create Category"
+      errors:
+        name:
+          blank: "can't be blank"
+        description:
+          blank: "can't be blank"
+    edit:
+      title: "Edit Category"
+      not_found: "Category not found."
+      back_to_categories: "Back to Categories"
+      form:
+        name: "Category Name"
+        description: "Category Description"
+        submit: "Save Category"
+      errors:
+        name:
+          blank: "can't be blank"
+        description:
+          blank: "can't be blank"
+    show:
+      not_found: "Category not found."
+      description: "Description"
+      products: "Products in this Category"
+      back_to_index: "Back to Categories"
+    create:
+      created_successfully: "Category created successfully."
+      creation_error: "Error creating category."
+    update:
+      updated_successfully: "Category updated successfully."
+      update_error: "Error updating category."
+    destroy:
+      destroy_category: "Delete Category"
+      confirm: "Are you sure you want to delete this category?"
+      deleted_successfully: "Category deleted successfully."
+    set_category:
+      not_found: "Category not found."
+    form:
+      errors:
+        title: "%{count} errors prohibited this category from being saved:"
+      labels:
+        name: "Name"
+      submit: "Save Category"
+      update: "Update Category"

@@ -34,6 +34,23 @@ es:
     edit:
       title: "Editar Producto"
       not_found: "Producto no encontrado."
+      form:
+        title: "Título del Producto"
+        description: "Descripción del Producto"
+        price: "Precio del Producto"
+        image: "Imagen del Producto"
+        submit: "Guardar Producto"
+        back_to_index: "Volver a Productos"
+        errors:
+          title:
+            blank: "no puede estar en blanco"
+          description:
+            blank: "no puede estar en blanco"
+          price:
+            blank: "no puede estar en blanco"
+            not_a_number: "debe ser un número"
+          image:
+            blank: "no puede estar en blanco"
 
     new:
       title: "Añadir Producto"
@@ -43,6 +60,7 @@ es:
     
     show:
       not_found: "Producto no encontrado."
+      description: "Descripción"
       price: "Precio"
       no_image: "No hay imagen disponible para este producto."
       edit: "Editar Producto"
@@ -71,8 +89,11 @@ es:
       description: "Descripción del Producto"
       price: "Precio del Producto"
       image: "Imagen del Producto"
+      category: "Categoría del Producto"
+      select_category: "Seleccionar Categoría"
       submit: "Guardar Producto"
       errors:
+        header: "%{count} errores impidieron que este producto se guardara:"
         title: "Errores al guardar el producto"
         blank: "no puede estar en blanco"
         not_a_number: "debe ser un número"
@@ -98,3 +119,67 @@ es:
       buy_now: "Comprar Ahora"
       out_of_stock: "Agotado"
       in_stock: "En Stock"
+
+  categories:
+    index:
+      title: "Categorías"
+      name: "Nombre"
+      no_categories: "No hay categorías disponibles."
+      add_category: "Añadir Categoría"
+      show_this_category: "Ver esta categoría"
+      new_category: "Nueva Categoría"
+      notice_created: "Categoría creada exitosamente."
+      notice_updated: "Categoría actualizada exitosamente."
+      notice_deleted: "Categoría eliminada exitosamente."
+      error: "Error al procesar la solicitud."
+    new:
+      title: "Añadir Nueva Categoría"
+      back_to_categories: "Volver a Categorías"
+      form:
+        name: "Nombre de la Categoría"
+        description: "Descripción de la Categoría"
+        submit: "Crear Categoría"
+      errors:
+        name:
+          blank: "no puede estar en blanco"
+        description:
+          blank: "no puede estar en blanco"
+    edit:
+      title: "Editar Categoría"
+      not_found: "Categoría no encontrada."
+      back_to_categories: "Volver a Categorías"
+      form:
+        name: "Nombre de la Categoría"
+        description: "Descripción de la Categoría"
+        submit: "Guardar Categoría"
+        update: "Actualizar Categoría"
+      errors:
+        name:
+          blank: "no puede estar en blanco"
+        description:
+          blank: "no puede estar en blanco"
+    show:
+      not_found: "Categoría no encontrada."
+      description: "Descripción"
+      products: "Productos en esta Categoría"
+      back_to_index: "Volver a Categorías"
+    create:
+      created_successfully: "Categoría creada exitosamente."
+      creation_error: "Error al crear la categoría."
+    update:
+      updated_successfully: "Categoría actualizada exitosamente."
+      update_error: "Error al actualizar la categoría."
+    destroy:
+      destroy_category: "Eliminar Categoria"
+      confirm: "¿Estás seguro de que quieres eliminar esta categoría?"
+      deleted_successfully: "Categoría eliminada exitosamente."
+      deletion_error: "Error al eliminar la categoría."
+    set_category:
+      not_found: "Categoría no encontrada."
+    form:
+      errors:
+        title: "%{count} errores impidieron que esta categoría se guardara:"
+      labels:
+        name: "Nombre"
+      submit: "Guardar Categoría"
+      update: "Actualizar Categoría"

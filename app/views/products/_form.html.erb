@@ -1,12 +1,15 @@
 <%= form_with model: @product, local: true do |form| %>
     <% if @product.errors.any? %>
-        <h2><%= t('errors.template.header', count: @product.errors.count, model: @product.class.model_name.human) %></h2>
-        <h2><%= pluralize(@product.errors.count, "error") %> <%= t('products.edit.form.errors.many_errors') %>:</h2>
-        <ul>
-            <% @product.errors.full_messages.each do |error| %>
-            <li class="text-danger"><%= error %></li>
-            <% end %>
-        </ul>
+        <div class="alert alert-danger">
+            <h2>
+                <%= t('products.form.errors.header', count: @product.errors.count, model: @product.class.model_name.human) %>
+            </h2>
+            <ul>
+                <% @product.errors.full_messages.each do |error| %>
+                    <li class="text-danger"><%= error %></li>
+                <% end %>
+            </ul>
+        </div>
     <% end %>
     <div class="container d-flex justify-content-between align-items-center mb-3 flex-column">
         <div class="mb-3 w-100">
@@ -25,9 +28,13 @@
             <%= form.label :image, class: 'form-label' %>
             <%= form.file_field :image, class: 'form-control' %>
         </div>
+        <div class="mb-3 w-100">
+            <%= form.label :category_id, t('products.form.category'), class: 'form-label' %>
+            <%= form.collection_select :category_id, Category.all.order(name: :asc), :id, :name, { prompt: t('products.form.select_category') }, class: 'form-select' %>
+        </div>
         <div class="actions">
             <%= form.submit t('products.edit.form.submit'), class: 'btn btn-primary' %>
         </div>
     </div>
 <% end %>
-<%= link_to t('.back_to_products'), products_path, class: 'btn btn-secondary' %>
+<%= link_to t('.back_to_index'), products_path, class: 'btn btn-secondary' %>

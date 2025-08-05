@@ -1,5 +1,17 @@
-<h1><%= t('.title') %></h1>
-<p><%= t('.description') %></p>
-<p>You can start building your application by editing the files in the <code>app/views/home/index.html.erb</code> file.</p>
-<p>To learn more about Rails, visit the <a href="https://guides.rubyonrails.org/getting_started.html" target="_blank">Getting Started with Rails</a> guide.</p>
-<%= link_to t('.go_to_products'), products_path, class: "btn btn-primary" %>
+<div class="container mt-5">
+    <div class="card shadow-sm">
+        <div class="card-body">
+            <h1 class="card-title mb-4"><%= t('.title') %></h1>
+            <p class="card-text"><%= t('.description') %></p>
+            <p class="text-muted">
+                <%= t('.edit_message', file: 'app/views/home/index.html.erb') %>
+            </p>
+            <p>
+                <a href="https://guides.rubyonrails.org/getting_started.html" target="_blank" class="link-primary">
+                    <%= t('.learn_rails') %>
+                </a>
+            </p>
+            <%= link_to t('.go_to_products'), products_path, class: "btn btn-primary mt-3" %>
+        </div>
+    </div>
+</div>
