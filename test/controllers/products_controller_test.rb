@@ -22,7 +22,7 @@ class ProductsControllerTest < ActionDispatch::IntegrationTest
 
     test 'allow to create a new product' do
         assert_difference 'Product.count', 1 do
-            post products_path, params: { product: { title: 'PS5', description: 'La nueva consola de Sony', price: 499.99 } }
+            post products_path, params: { product: { title: 'PS5', description: 'La nueva consola de Sony', price: 499.99, category_id: categories(:Videogames).id } }
         end
         assert_redirected_to products_path
         follow_redirect!

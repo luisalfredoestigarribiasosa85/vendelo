@@ -1,6 +1,6 @@
 class ProductsController < ApplicationController
     def index
-        @products = Product.all.with_attached_image
+        @products = Product.all.with_attached_image.order(created_at: :desc)
     end
     def show
         set_product
