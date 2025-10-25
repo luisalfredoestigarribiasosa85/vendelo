@@ -70,7 +70,7 @@ volumes:
 # Configura PostgreSQL como un servicio accesorio
 accessories:
   db:
-    image: postgres:15
+    image: postgres:17
     host: 192.168.98.128
     port: "5432:5432"
     env:
