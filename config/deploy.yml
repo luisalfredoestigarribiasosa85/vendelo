@@ -49,6 +49,9 @@ env:
     # Match this to any external database server to configure Active Record correctly
     # Use vendelo-db for a db accessory server on same machine via local kamal docker network.
     DB_HOST: vendelo-db
+    DB_PORT: 5432
+    POSTGRES_USER: postgres
+    POSTGRES_PASSWORD: postgres
 
     # Log everything from Rails
     # RAILS_LOG_LEVEL: debug
