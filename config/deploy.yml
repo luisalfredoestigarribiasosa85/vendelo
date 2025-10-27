@@ -7,7 +7,7 @@ image: luis1203/vendelo
 # Deploy to these servers.
 servers:
   web:
-    - 192.168.98.128
+    - 35.237.111.151
   # job:
   #   hosts:
   #     - 192.168.0.1
@@ -19,7 +19,7 @@ servers:
 # Note: If using Cloudflare, set encryption mode in SSL/TLS setting to "Full" to enable CF-to-app encryption.
 proxy:
   ssl: true
-  host: vendelo.io
+  host: www.vendelo.io
 
 # Credentials for your image host.
 registry:
@@ -74,7 +74,7 @@ volumes:
 accessories:
   db:
     image: postgres:17
-    host: 192.168.98.128
+    host: 35.237.111.151
     port: "5432:5432"
     env:
       clear:
