@@ -34,7 +34,7 @@ Rails.application.configure do
   config.force_ssl = true
 
   # Skip http-to-https redirect for the default health check endpoint.
-  # config.ssl_options = { redirect: { exclude: ->(request) { request.path == "/up" } } }
+  config.ssl_options = { redirect: { exclude: ->(request) { request.path == "/up" } } }
 
   # Log to STDOUT with the current request id as a default log tag.
   config.log_tags = [ :request_id ]
@@ -75,6 +75,12 @@ Rails.application.configure do
   # Enable locale fallbacks for I18n (makes lookups for any locale fall back to
   # the I18n.default_locale when a translation cannot be found).
   config.i18n.fallbacks = true
+
+  config.hosts << "vendelo.info"
+  config.hosts << "www.vendelo.info"
+  config.hosts << /\A[a-f0-9]+\z/
+
+  config.host_authorization = { exclude: ->(request) { request.path == "/up" } }
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
