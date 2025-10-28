@@ -230,6 +230,10 @@ en:
         remember_me: "Remember me"
         submit: "Log in"
         forgot_your_password: "Forgot your password?"
+        no_account: "Don't have an account?"
+        sign_up_now: "Sign up now"
+        email_placeholder: "Enter your email"
+        password_placeholder: "Enter your password"
     registrations:
       new:
         title: "Sign Up"
@@ -241,6 +245,11 @@ en:
       logout: "Log out"
       sign_in: "Sign in"
       sign_up: "Sign up"
+      confirmation_instructions: "Didn't receive confirmation instructions?"
+      forgot_your_password: "Forgot your password?"
+      reset_password: "Reset Password"
+      send_reset_link: "Send reset link"
+      back_to_sign_in: "Back to Sign In"
     passwords:
       forgot_your_password: "Forgot your password?"
       reset_password: "Reset Password"

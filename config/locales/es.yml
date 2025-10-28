@@ -208,14 +208,30 @@ es:
 
   devise:
     sessions:
+      new:
+        title: "Iniciar Sesión"
+        email: "Correo electrónico"
+        password: "Contraseña"
+        log_in: "Iniciar sesión"
+        sign_out: "Cerrar sesión"
+        email: "Correo electrónico"
+        password: "Contraseña"
+        remember_me: "Recuérdame"
+        forgot_your_password: "¿Olvidaste tu contraseña?"
+        no_account: "¿No tienes una cuenta?"
+        sign_up_now: "Regístrate ahora"
+        email_placeholder: "Introduce tu correo electrónico"
+        password_placeholder: "Introduce tu contraseña"
+    links:
+      logout: "Cerrar sesión"
       sign_in: "Iniciar sesión"
-      sign_out: "Cerrar sesión"
-      email: "Correo electrónico"
-      password: "Contraseña"
-      remember_me: "Recuérdame"
+      sign_up: "Registrarse"
+      confirmation_instructions: "¿No recibiste las instrucciones de confirmación?"
       forgot_your_password: "¿Olvidaste tu contraseña?"
-      no_account: "¿No tienes una cuenta?"
-      sign_up_now: "Regístrate ahora"
+      reset_password: "Restablecer Contraseña"
+      send_reset_link: "Enviar enlace de restablecimiento"
+      back_to_sign_in: "Volver a Iniciar sesión"
+
     registrations:
       sign_up: "Registrarse"
       sign_up_title: "Crea tu cuenta"
