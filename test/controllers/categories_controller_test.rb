@@ -4,6 +4,8 @@ class CategoriesControllerTest < ActionDispatch::IntegrationTest
   setup do
     @category = categories(:Videogames)
     @category2 = categories(:Consoles)
+    @user = users(:one)
+    sign_in @user
   end
 
   test "should get index" do

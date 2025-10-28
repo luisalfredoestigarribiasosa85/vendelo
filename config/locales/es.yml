@@ -30,6 +30,13 @@ es:
       title: "Bienvenido a Vendelo"
       description: "Aquí puedes comprar y vender productos de segunda mano."
       go_to_products: "Ir a Productos"
+      edit_message: "Puedes editar este archivo en %{file}."
+      or: "o"
+      learn_rails: "Aprender Rails"
+      log_in: "Iniciar sesión"
+      sign_up: "Registrarse"
+      please_log_in: "Por favor, inicia sesión para continuar."
+
   products:
     edit:
       title: "Editar Producto"
@@ -57,7 +64,14 @@ es:
 
     index:
       title: "Productos:"
-    
+      no_products: "No hay productos disponibles."
+      add_product: "Añadir Producto"
+      show_this_product: "Ver este producto"
+      edit_this_product: "Editar este producto"
+      delete_this_product: "Eliminar este producto"
+      back_to_index: "Volver a Productos"
+      sign_in_to_continue: "Inicia sesión para ver todos los productos."
+
     show:
       not_found: "Producto no encontrado."
       description: "Descripción"
@@ -107,6 +121,8 @@ es:
       home: "Inicio"
       products: "Productos"
       add_product: "Añadir Producto"
+      logout: "Cerrar sesión"
+      sign_in: "Iniciar sesión"
     product:
       no_image: "No hay imagen disponible para este producto."
       title: "Título del Producto"
@@ -132,6 +148,12 @@ es:
       notice_updated: "Categoría actualizada exitosamente."
       notice_deleted: "Categoría eliminada exitosamente."
       error: "Error al procesar la solicitud."
+      please_log_in: "Por favor, inicia sesión para ver las categorías."
+      log_in: "Iniciar sesión"
+      sign_up: "Registrarse"
+      or: "o"
+    set_category:
+      not_found: "Categoría no encontrada."
     new:
       title: "Añadir Nueva Categoría"
       back_to_categories: "Volver a Categorías"
@@ -183,3 +205,29 @@ es:
         name: "Nombre"
       submit: "Guardar Categoría"
       update: "Actualizar Categoría"
+
+  devise:
+    sessions:
+      sign_in: "Iniciar sesión"
+      sign_out: "Cerrar sesión"
+      email: "Correo electrónico"
+      password: "Contraseña"
+      remember_me: "Recuérdame"
+      forgot_your_password: "¿Olvidaste tu contraseña?"
+      no_account: "¿No tienes una cuenta?"
+      sign_up_now: "Regístrate ahora"
+    registrations:
+      sign_up: "Registrarse"
+      sign_up_title: "Crea tu cuenta"
+      email: "Correo electrónico"
+      password: "Contraseña"
+      password_confirmation: "Confirmar Contraseña"
+      already_have_account: "¿Ya tienes una cuenta?"
+      sign_in_now: "Inicia sesión ahora"
+    passwords:
+      forgot_your_password: "¿Olvidaste tu contraseña?"
+      reset_password: "Restablecer Contraseña"
+      send_reset_link: "Enviar enlace de restablecimiento"
+      back_to_sign_in: "Volver a Iniciar sesión"
+    failure:
+      unauthenticated: "Debes iniciar sesión para acceder a esta sección."

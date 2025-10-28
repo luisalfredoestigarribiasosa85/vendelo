@@ -1,15 +1,35 @@
 <nav class="navbar navbar-expand-lg bg-dark">
   <div class="container-fluid">
-    <a class="navbar-brand text-light" href="<%= home_path %>">Vendelo E-Commerce</a>
+    <a class="navbar-brand text-light" href="<%= root_path %>">Vendelo E-Commerce</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
-        <%= link_to t('.home'), home_path, class: 'nav-link text-light' %>
-        <%= link_to t('.products'), products_path, class: 'nav-link text-light' %>
-        <%= link_to t('.add_product'), new_product_path, class: 'nav-link text-light' %>
-        <%= link_to t('categories.index.title'), categories_path, class: 'nav-link text-light' %>
+        <li class="nav-item">
+          <%= link_to t('.home'), root_path, class: 'nav-link text-light' %>
+        </li>
+        <li class="nav-item">
+          <%= link_to t('.products'), products_path, class: 'nav-link text-light' %>
+        </li>
+        <li class="nav-item">
+          <%= link_to t('.add_product'), new_product_path, class: 'nav-link text-light' %>
+        </li>
+        <li class="nav-item">
+          <%= link_to t('categories.index.title'), categories_path, class: 'nav-link text-light' %>
+        </li>
+        <% if user_signed_in? %>
+          <li class="nav-item">
+            <%= link_to t('.logout'), destroy_user_session_path, method: :delete, class: 'nav-link text-light', data: { turbo_method: :delete } %>
+          </li>
+        <% else %>
+          <li class="nav-item">
+            <%= link_to t('.sign_in'), new_user_session_path, class: 'nav-link text-light' %>
+          </li>
+          <li class="nav-item">
+            <%= link_to t('.sign_up'), new_user_registration_path, class: 'nav-link text-light' %>
+          </li>
+        <% end %>
       </ul>
     </div>
   </div>

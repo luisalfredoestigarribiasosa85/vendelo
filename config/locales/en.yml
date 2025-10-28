@@ -60,6 +60,12 @@ en:
       title: "Welcome to Vendelo!"
       description: "This is the home page of your Rails application."
       go_to_products: "Go to Products"
+      edit_message: "You can edit this file at %{file}."
+      or: "or"
+      learn_rails: "Learn Rails"
+      log_in: "Log in"
+      sign_up: "Sign up"
+      please_log_in: "Please log in to continue."
 
   products:
     edit:
@@ -93,6 +99,13 @@ en:
 
     index:
       title: "Products:"
+      no_products: "No products available."
+      add_product: "Add Product"
+      show_this_product: "Show this product"
+      edit_this_product: "Edit this product"
+      delete_this_product: "Delete this product"
+      back_to_index: "Back to Products"
+      sign_in_to_continue: "Sign in to view all products."
     
     show:
       not_found: "Product not found."
@@ -125,6 +138,8 @@ en:
       home: "Home"
       products: "Products"
       add_product: "Add Product"
+      logout: "Log out"
+      sign_in: "Sign in"
 
     product:
       no_image: "No image available for this product."
@@ -151,6 +166,12 @@ en:
       notice_updated: "Category updated successfully."
       notice_deleted: "Category deleted successfully."
       error: "Error processing the request."
+      please_log_in: "Please log in to view categories."
+      log_in: "Log in"
+      sign_up: "Sign up"
+      or: "or"
+    set_category:
+      not_found: "Category not found."
     new:
       title: "Add New Category"
       form:
@@ -199,3 +220,31 @@ en:
         name: "Name"
       submit: "Save Category"
       update: "Update Category"
+
+  devise:
+    sessions:
+      new:
+        title: "Log In"
+        email: "Email"
+        password: "Password"
+        remember_me: "Remember me"
+        submit: "Log in"
+        forgot_your_password: "Forgot your password?"
+    registrations:
+      new:
+        title: "Sign Up"
+        email: "Email"
+        password: "Password"
+        password_confirmation: "Password Confirmation"
+        submit: "Sign up"
+    links:
+      logout: "Log out"
+      sign_in: "Sign in"
+      sign_up: "Sign up"
+    passwords:
+      forgot_your_password: "Forgot your password?"
+      reset_password: "Reset Password"
+      send_reset_link: "Send reset link"
+      back_to_sign_in: "Back to Sign In"
+    failure:
+      unauthenticated: "You need to sign in or sign up before continuing."

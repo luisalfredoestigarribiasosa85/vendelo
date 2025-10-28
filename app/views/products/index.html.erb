@@ -1,20 +1,24 @@
 <h1 class="text-center my-4 display-5"><%= t('.title') %></h1>
 
-<% if @products.empty? %>
-    <p class="text-center text-muted">No hay productos disponibles.</p>
-<% else %>
-    <div class="container py-4">
-        <div class="products-grid">
-            <%= render partial: 'shared/product', collection: @products %>
+<% if (defined?(user_signed_in?) ? user_signed_in? : current_user.present?) %>
+    <% if @products.empty? %>
+        <p class="text-center text-muted"><%= t('.no_products') %></p>
+    <% else %>
+        <div class="container py-4">
+            <div class="products-grid">
+                <%= render partial: 'shared/product', collection: @products %>
+            </div>
         </div>
-    </div>
-<% end %>
+    <% end %>
 
-<style>
-.products-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 1.5rem;
-    align-items: stretch;
-}
-</style>
+    <style>
+    .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            align-items: stretch;
+    }
+    </style>
+<% else %>
+    <p class="text-center text-muted">Debes iniciar sesión para ver los productos.</p>
+<% end %>

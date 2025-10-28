@@ -1,5 +1,9 @@
 require 'test_helper'
 class ProductsControllerTest < ActionDispatch::IntegrationTest
+    setup do
+        @user = users(:one)
+        sign_in @user
+    end
     test 'render a list of products' do
         get products_path
         assert_response :success

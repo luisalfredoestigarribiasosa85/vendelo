@@ -1,17 +1,28 @@
-<div class="container mt-5">
-    <div class="card shadow-sm">
-        <div class="card-body">
-            <h1 class="card-title mb-4"><%= t('.title') %></h1>
-            <p class="card-text"><%= t('.description') %></p>
-            <p class="text-muted">
-                <%= t('.edit_message', file: 'app/views/home/index.html.erb') %>
-            </p>
-            <p>
-                <a href="https://guides.rubyonrails.org/getting_started.html" target="_blank" class="link-primary">
-                    <%= t('.learn_rails') %>
-                </a>
-            </p>
-            <%= link_to t('.go_to_products'), products_path, class: "btn btn-primary mt-3" %>
+<% if user_signed_in? %>
+    <div class="container mt-5">
+            <div class="card shadow-sm">
+                    <div class="card-body">
+                            <h1 class="card-title mb-4"><%= t('.title') %></h1>
+                            <p class="card-text"><%= t('.description') %></p>
+                            <p class="text-muted">
+                                    <%= t('.edit_message', file: 'app/views/home/index.html.erb') %>
+                            </p>
+                            <p>
+                                    <a href="https://guides.rubyonrails.org/getting_started.html" target="_blank" class="link-primary">
+                                            <%= t('.learn_rails') %>
+                                    </a>
+                            </p>
+                            <%= link_to t('.go_to_products'), products_path, class: "btn btn-primary mt-3" %>
+                    </div>
+            </div>
+    </div>
+<% else %>
+    <div class="container mt-5">
+        <div class="text-center">
+            <h2><%= t('.please_log_in') %></h2>
+            <%= link_to t('.log_in'), new_user_session_path, class: 'btn btn-primary' %>
+            <p><%= t('.or') %></p>
+            <%= link_to t('.sign_up'), new_user_registration_path, class: 'btn btn-success' %>
         </div>
     </div>
-</div>
+<% end %>

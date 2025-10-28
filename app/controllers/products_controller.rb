@@ -1,4 +1,5 @@
 class ProductsController < ApplicationController
+    skip_before_action :authenticate_user!, only: %i[index show]
     def index
         @categories = Category.all
         @products = Product.all.with_attached_image.order(created_at: :desc)
