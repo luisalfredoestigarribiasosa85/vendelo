@@ -8,3 +8,18 @@
  *
  * Consider organizing styles into separate files for maintainability.
  */
+
+.hover-underline-animation {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.hover-underline-animation:hover {
+  position: relative;
+  display: inline-block;
+  text-decoration: underline;
+}
+
+.flash--fade { animation: flashFade 0.4s forwards; }
+@keyframes flashFade { to { opacity: 0; transform: translateY(-8px); } }

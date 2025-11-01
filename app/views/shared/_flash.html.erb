@@ -1,12 +1,12 @@
 <div class="container mt-4">
     <% if flash[:notice] %>
-        <div class="alert alert-success">
+        <div class="alert alert-success" data-controller="flash" data-flash-timeout-value="3000">
           <%= flash[:notice] %>
         </div>
     <% end %>
 
     <% if flash[:alert] %>
-        <div class="alert alert-danger">
+        <div class="alert alert-danger" data-controller="flash" data-flash-timeout-value="3000">
             <%= flash[:alert] %>
         </div>
     <% end %>

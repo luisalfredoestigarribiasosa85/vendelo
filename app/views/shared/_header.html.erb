@@ -7,27 +7,27 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <%= link_to t('.home'), root_path, class: 'nav-link text-light' %>
+          <%= link_to t('.home'), root_path, class: 'nav-link text-light hover-underline-animation' %>
         </li>
         <li class="nav-item">
-          <%= link_to t('.products'), products_path, class: 'nav-link text-light' %>
+          <%= link_to t('.products'), products_path, class: 'nav-link text-light hover-underline-animation' %>
         </li>
         <li class="nav-item">
-          <%= link_to t('.add_product'), new_product_path, class: 'nav-link text-light' %>
+          <%= link_to t('.add_product'), new_product_path, class: 'nav-link text-light hover-underline-animation' %>
         </li>
         <li class="nav-item">
-          <%= link_to t('categories.index.title'), categories_path, class: 'nav-link text-light' %>
+          <%= link_to t('categories.index.title'), categories_path, class: 'nav-link text-light hover-underline-animation' %>
         </li>
         <% if user_signed_in? %>
           <li class="nav-item">
-            <%= link_to t('.logout'), destroy_user_session_path, method: :delete, class: 'nav-link text-light', data: { turbo_method: :delete } %>
+            <%= link_to t('.logout'), destroy_user_session_path, method: :delete, class: 'nav-link text-danger fw-bold hover-underline-animation', data: { turbo_method: :delete } %>
           </li>
         <% else %>
           <li class="nav-item">
-            <%= link_to t('.sign_in'), new_user_session_path, class: 'nav-link text-light' %>
+            <%= link_to t('.sign_in'), new_user_session_path, class: 'nav-link text-primary fw-bold hover-underline-animation' %>
           </li>
           <li class="nav-item">
-            <%= link_to t('.sign_up'), new_user_registration_path, class: 'nav-link text-light' %>
+            <%= link_to t('.sign_up'), new_user_registration_path, class: 'nav-link text-success fw-bold hover-underline-animation' %>
           </li>
         <% end %>
       </ul>

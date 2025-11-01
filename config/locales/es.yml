@@ -222,6 +222,10 @@ es:
         sign_up_now: "Regístrate ahora"
         email_placeholder: "Introduce tu correo electrónico"
         password_placeholder: "Introduce tu contraseña"
+      user:
+        signed_in: "Has iniciado sesión exitosamente."
+        signed_out: "Has cerrado sesión exitosamente."
+        already_signed_out: "Ya has cerrado sesión."
     links:
       logout: "Cerrar sesión"
       sign_in: "Iniciar sesión"
@@ -233,13 +237,16 @@ es:
       back_to_sign_in: "Volver a Iniciar sesión"
 
     registrations:
-      sign_up: "Registrarse"
-      sign_up_title: "Crea tu cuenta"
-      email: "Correo electrónico"
-      password: "Contraseña"
-      password_confirmation: "Confirmar Contraseña"
-      already_have_account: "¿Ya tienes una cuenta?"
-      sign_in_now: "Inicia sesión ahora"
+      new:
+        title: "Registrarse"
+        sign_up: "Registrarse"
+        sign_up_title: "Crea tu cuenta"
+        email: "Correo electrónico"
+        password: "Contraseña"
+        password_confirmation: "Confirmar Contraseña"
+        already_have_account: "¿Ya tienes una cuenta?"
+        sign_in_now: "Inicia sesión ahora"
+        minimum_password_length: "mínimo de caracteres"
     passwords:
       forgot_your_password: "¿Olvidaste tu contraseña?"
       reset_password: "Restablecer Contraseña"
@@ -247,3 +254,4 @@ es:
       back_to_sign_in: "Volver a Iniciar sesión"
     failure:
       unauthenticated: "Debes iniciar sesión para acceder a esta sección."
+    
