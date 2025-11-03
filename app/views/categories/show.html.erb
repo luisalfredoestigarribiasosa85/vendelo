@@ -3,6 +3,25 @@
 <div class="container py-5">
   <h1 class="text-center mb-4 display-5"><%= @category.name %></h1>
 
+  <div class="row">
+    <% @category.products.each do |product| %>
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <% if product.image.attached? %>
+            <%= image_tag product.image, class: "card-img-top", alt: product.title %>
+          <% else %>
+            <%= image_tag "placeholder.png", class: "card-img-top", alt: "No image available" %>
+          <% end %>
+          <div class="card-body">
+            <h5 class="card-title"><%= product.title %></h5>
+            <p class="card-text"><%= number_to_currency(product.price) %></p>
+            <%= link_to t('products.show.view_details'), product_path(product), class: "btn btn-primary" %>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+
   <div class="d-flex justify-content-center gap-3 mt-4">
     <%= link_to t('categories.edit.title'), edit_category_path(@category), class: 'btn btn-warning btn-lg' %>
     <%= link_to t('categories.edit.back_to_categories'), categories_path, class: 'btn btn-secondary btn-lg' %>

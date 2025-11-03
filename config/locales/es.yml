@@ -2,12 +2,16 @@ es:
   activerecord:
     models:
       product: "Producto"
+      category: "Categoría"
     attributes:
       product:
         title: "Título"
         description: "Descripción"
         price: "Precio"
         image: "Imagen"
+      category:
+        name: "Nombre"
+        description: "Descripción"
     errors:
       models:
         product:
@@ -22,6 +26,14 @@ es:
             image:
               blank: "no puede estar en blanco"
               invalid: "debe ser una imagen válida"
+        category:
+          attributes:
+            name:
+              blank: "no puede estar en blanco"
+              taken: "ya está en uso"
+            description:
+              blank: "no puede estar en blanco"
+              taken: "ya está en uso"
   common:
     confirm: "¿Estás seguro de que quieres eliminar este producto?"
 
@@ -172,9 +184,11 @@ es:
       back_to_categories: "Volver a Categorías"
       form:
         name: "Nombre de la Categoría"
+        labels:
+          description: "Descripción"
         description: "Descripción de la Categoría"
-        submit: "Guardar Categoría"
-        update: "Actualizar Categoría"
+      submit: "Guardar Categoría"
+      update: "Actualizar Categoría"
       errors:
         name:
           blank: "no puede estar en blanco"
@@ -203,6 +217,7 @@ es:
         title: "%{count} errores impidieron que esta categoría se guardara:"
       labels:
         name: "Nombre"
+        description: "Descripción"
       submit: "Guardar Categoría"
       update: "Actualizar Categoría"
 
@@ -247,6 +262,7 @@ es:
         already_have_account: "¿Ya tienes una cuenta?"
         sign_in_now: "Inicia sesión ahora"
         minimum_password_length: "mínimo de caracteres"
+      signed_up: "¡Bienvenido! Te has registrado exitosamente."
     passwords:
       forgot_your_password: "¿Olvidaste tu contraseña?"
       reset_password: "Restablecer Contraseña"

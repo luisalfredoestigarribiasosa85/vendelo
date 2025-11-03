@@ -248,6 +248,8 @@ en:
         already_have_account: "Already have an account?"
         sign_in_now: "Sign in now"
         minimum_password_length: "minimum characters"
+        user:
+          signed_up: "Welcome! You have signed up successfully."
     links:
       logout: "Log out"
       sign_in: "Sign in"

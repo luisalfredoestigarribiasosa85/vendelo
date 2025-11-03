@@ -15,6 +15,9 @@
     <%= form.label :name, t('categories.form.labels.name'), class: 'form-label' %>
     <%= form.text_field :name, class: 'form-control' %>
 
+    <%= form.label :description, t('categories.form.labels.description'), class: 'form-label mt-3' %>
+    <%= form.rich_text_area :description, class: 'form-control' %>
+
     <%= form.submit t('categories.form.submit'), class: 'btn btn-primary mt-2' %>
   </div>
 <% end %>
