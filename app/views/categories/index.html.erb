@@ -10,7 +10,7 @@
           <div class="card h-100 shadow-sm border-0">
             <div class="card-body">
               <h5 class="card-title text-center"><%= category.name %></h5>
-              <p class="card-text text-muted text-center"><%= t('categories.index.description_placeholder') %></p>
+              <div class="card-text text-muted text-center"><%= sanitize(category.description, tags: %w(div span p br strong em u ul ol li), attributes: %w(class style)) %></div>
             </div>
             <div class="card-footer bg-white border-0 text-center">
               <%= link_to t('categories.index.show_this_category'), category, class: 'btn btn-outline-success btn-sm' %>

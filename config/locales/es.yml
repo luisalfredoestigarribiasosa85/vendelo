@@ -13,7 +13,25 @@ es:
         name: "Nombre"
         description: "Descripción"
     errors:
+      messages:
+        too_short: "debe tener al menos %{count} caracteres"
       models:
+        product:
+          attributes:
+            title:
+              blank: "no puede estar en blanco"
+            description:
+              blank: "no puede estar en blanco"
+            price:
+              blank: "no puede estar en blanco"
+              not_a_number: "debe ser un número"
+            image:
+              blank: "no puede estar en blanco"
+              invalid: "debe ser una imagen válida"
+        user:
+          attributes:
+            password:
+              too_short: "debe tener al menos %{count} caracteres"
         product:
           attributes:
             title:
@@ -270,4 +288,12 @@ es:
       back_to_sign_in: "Volver a Iniciar sesión"
     failure:
       unauthenticated: "Debes iniciar sesión para acceder a esta sección."
-    
+      user:
+        not_found_in_database: "Usuario no encontrado en la base de datos."
+  
+  errors:
+    messages:
+      not_saved: "No se pudo guardar %{resource}."
+      not_found: "No se encontró %{resource}."
+      too_short: "debe tener al menos %{count} caracteres"
+      

@@ -38,6 +38,8 @@ en:
         price: "Price"
         image: "Image"
     errors:
+      messages:
+        too_short: "debe tener al menos %{count} caracteres"
       models:
         product:
           attributes:
@@ -51,6 +53,12 @@ en:
             image:
               blank: "can't be blank"
               invalid: "must be a valid image"
+        user:
+          too_short: "must be at least %{count} characters"
+        product:
+          attributes:
+            password:
+              too_short: "must be at least %{count} characters"
 
   common:
     confirm: "Are you sure you want to delete this product?"
@@ -266,4 +274,11 @@ en:
       back_to_sign_in: "Back to Sign In"
     failure:
       unauthenticated: "You need to sign in or sign up before continuing."
-    
+      user:
+        not_found_in_database: "User not found in database."
+
+  errors:
+    messages:
+      too_short: "must be at least %{count} characters"
+      not_saved: "No se pudo guardar %{resource}."
+      not_found: "No se encontró %{resource}."
