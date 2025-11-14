@@ -28,6 +28,9 @@ ENV RAILS_ENV="production" \
 # Throw-away build stage to reduce size of final image
 FROM base AS build
 
+# Install specific bundler version
+RUN gem install bundler:2.5.22
+
 # Install packages needed to build gems
 RUN apt-get update -qq && \
     apt-get install --no-install-recommends -y build-essential git libpq-dev libyaml-dev pkg-config && \
@@ -39,17 +42,22 @@ RUN bundle install && \
     rm -rf ~/.bundle/ "${BUNDLE_PATH}"/ruby/*/cache "${BUNDLE_PATH}"/ruby/*/bundler/gems/*/.git && \
     bundle exec bootsnap precompile --gemfile
 
+# Set permissions for bin files before copying
+RUN mkdir -p /rails/bin && \
+    chmod -R 777 /rails/bin
+
 # Copy application code
 COPY . .
+
+# Set permissions for bin files
+RUN chmod +x bin/* && \
+    chmod -R a+x bin
 
 # Precompile bootsnap code for faster boot times
 RUN bundle exec bootsnap precompile app/ lib/
 
-# Precompiling assets for production without requiring secret RAILS_MASTER_KEY
-RUN SECRET_KEY_BASE_DUMMY=1 ./bin/rails assets:precompile
-
-
-
+# Precompiling assets for production
+RUN bundle _2.5.22_ exec rails assets:precompile
 
 # Final stage for app image
 FROM base
